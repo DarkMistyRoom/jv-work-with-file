@@ -46,7 +46,7 @@ public class WorkWithFile {
             List<String> lines = Files.readAllLines(file.toPath());
             linesArr = lines.toArray(new String[0]);
         } catch (IOException e) {
-            throw new RuntimeException("Can't write data to the file " + fileName, e);
+            throw new RuntimeException("Cannot write data to the file " + fileName, e);
         }
 
         return linesArr;
